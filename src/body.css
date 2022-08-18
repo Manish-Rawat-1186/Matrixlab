@@ -180,7 +180,7 @@ body {
 
 
 @media only screen and (max-width: 900px) {
-    .secondary_body {
+    .secondary_body {background: url("/home/uzumaki/Desktop/Web2/page/public/images/ham.png");
         display: flex;
         flex-direction: column !important;
         justify-content: center;
