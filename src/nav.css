@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.mobile-nav-toggle{
+    display: none;
+}
+
+.nav_header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   height: 6.5rem;
+   justify-content: space-evenly;
+   background-color: black;
+   color : white;
+
+}
+
+.nav_logo{
+    color: white;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.nav_logo h2 {
+    font-size: 2.43rem;
+}
+
+.nav_logo img {
+    position: relative;
+    left: 8px;
+    top : 20px;
+}
+
+.nav_nav{
+    margin: 1rem;
+
+    justify-content: space-evenly;
+    flex-grow: 1;
+    align-items: center;
+} 
+
+.nav_nav p{
+    font-size: 1.875rem;
+}
+
+.nav_nav button {
+    width: 11rem;
+    height: 3.75rem;
+    line-height: 44.46px;
+    font-size: 1.875rem;
+    align-items: center;
+    background-color: #3dba41;
+    border-radius: 50px;
+    color: white;
+    border: none;
+}
+
+
+
+/* @supports (backdrop-filter:blur(1rem))
+{
+    .nav_nav {
+        background-color: hsl(0 0% 100% /0.1);
+        backdrop-filter: blur(1rem);
+        
+    }
+} */
+
+@media only screen and (max-width: 1000px) {
+    .nav_nav {
+        position: fixed;
+        --gap: 2rem;
+        z-index: 1000;
+
+        /* inset: 0 0 0 30%;
+        background-color: hsl(0 0% 100% /0.1);
+        backdrop-filter: blur(1rem); */
+       
+
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+
+    }
+
+    .nav_nav p {
+        display: none;
+        color: black;
+    }
+
+    .nav_nav button {
+        /* position: absolute;
+        top: 4px;
+        left: 60px;
+        font-size: 1.5rem;
+        
+         */
+         display: none;
+    }
+
+    .nav_logo h2 {
+        font-size: 1.6rem;
+    }
+
+    
+
+    .nav_header {
+        height: 10% !;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: url("/home/uzumaki/Desktop/Web2/page/public/images/ham.png");
+        background-repeat: no-repeat;
+        border: 0;
+        width: 4rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
+    
+  }
+
+
+  .flex{
+    display: flex;
+    gap: (--gap, 1rem);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
+
+ 

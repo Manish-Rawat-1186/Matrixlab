@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    display: block;
+   margin: 0;
+    padding: 0%;
+}
+
+.secondary_header{
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondary_header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+
+.secondary_header p {
+    font-size: 1.125rem;
+    width: 22rem;
+    text-align: center;
+}
+
+.secondary_body {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.secondary_body div {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+   
+
+}
+
+.cat {
+    height: 30%;
+}
+
+
+
+.left_one {
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+    border-right: 5px solid white;
+    z-index: 9999;
+   
+}
+
+.left_one button {
+    padding: 24px 58px;
+    width: 17.6rem;
+    height: 5.26rem;
+
+    font-size: 1.5rem;
+    color: white;
+
+    background: linear-gradient(180deg, #3DBA41 0%, #007B04 100%);
+    border-radius: 6.98795px;
+}
+
+.left_one h2 {
+    padding: 20px;
+    margin: 10px;
+    font-size: 2rem;
+    line-height: 48px;
+    letter-spacing: 0.06em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.right_one {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #007B04;
+}
+
+.right_one div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 29rem;
+
+}
+
+.right_one div img {
+    position: relative;
+
+    height: 400px;
+    left: 32%;
+}
+
+.right_one div p {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: 100%;
+    margin-left: 40%;
+
+}
+
+.tokenomics {
+        position: relative;
+        left: 10px;
+        background-color: black;
+        color: white;
+        
+        text-align: center;
+        width: 500px;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 10px;
+
+
+}
+
+.tokenomics div {
+    position: relative;
+    left: 20px;
+   display: flex;
+   width: 150px;
+   height: 130;
+
+}
+
+.tokenomics div img {
+    width: 150px;
+    height: 140;
+}
+
+.tax {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    padding-bottom: 3rem;
+    color: white;
+}
+
+.tax h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #3DBA41;
+    font-size: 1.5rem;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.tax p {
+
+    font-family: 'Poppins', sans-serif;
+    size: 1.2rem;
+    color:white;
+    line-height: 36px;
+    text-align: center !important;
+    letter-spacing: 0.06em;
+}
+
+.x {
+    border-right: 1px solid white;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .secondary_body {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .secondary_header {
+        height: 200px;
+    }
+
+    .secondary_header h1{
+        font-size: 2rem ;
+    }
+
+    .left_one {
+        width: 100%;
+    }
+
+
+
+    .right_one{
+        width: 100%;
+    }
+    .right_one div p {
+        padding-bottom:3rem;
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .right_one div img {
+        position: relative;
+    
+        height: 400px;
+        left: 15%;
+    }
+
+    .left_one {
+        border: none;
+    }
+
+}
